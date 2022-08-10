@@ -5,6 +5,7 @@ date: 2022-06-09 21:03:36 +0530
 categories: TechnicalNote
 ---
 
+```
 ########################################################################
 [Hue 설치 전 시스템 설정 작업]
 아래 명령어를 순차적으로 실행 할 것
@@ -42,3 +43,4 @@ yum install postgresql-devel
 yum install gcc
 bash -c "source /opt/rh/python27/enable; pip install psycopg2==2.6.2 --ignore-installed"
 
+```
