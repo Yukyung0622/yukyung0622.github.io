@@ -12,6 +12,7 @@ export HIVE_HOME=/home/bigdata/hive
 export PATH=$PATH:$HIVE_HOME/bin
 
 
+```
 ################## hive-site.xml ##################################
 <configuration>
     <property>
@@ -35,4 +36,5 @@ export PATH=$PATH:$HIVE_HOME/bin
         <value>1234</value>
     </property>
 </configuration>
+```
 
