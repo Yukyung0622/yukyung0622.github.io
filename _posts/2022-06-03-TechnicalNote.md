@@ -5,6 +5,7 @@ date: 2022-06-03 21:03:36 +0530
 categories: TechnicalNote
 ---
 
+```
 ================== .bashrc ================================
 
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
@@ -103,4 +104,4 @@ agent2.sinks.targetSink.hdfs.threadsPoolSize = 10
 
 agent2.channels.targetChannel.type = memory
 agent2.channels.targetChannel.capacity = 100
-
+```

@@ -5,6 +5,7 @@ date: 2022-06-13 21:03:36 +0530
 categories: TechnicalNote
 ---
 
+```
 // Spark 다운로드
 wget http://mirror.apache-kr.org/spark/spark-2.3.2/spark-2.3.2-bin-hadoop2.7.tgz
 
@@ -144,5 +145,6 @@ keyword_df.write.save("/result/naver")
 #단일파일로 저장
 keyword_df.coalesce(1).write.csv("/result/naver4")
 
+```
 
 
