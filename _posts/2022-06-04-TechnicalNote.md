@@ -5,6 +5,7 @@ date: 2022-06-04 21:03:36 +0530
 categories: TechnicalNote
 ---
 
+```
 ################## 환경변수 설정 #################################
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
 export PATH=$PATH:$JAVA_HOME/bin
@@ -18,8 +19,9 @@ export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 export YARN_CONF_DIR=$HADOOP_HOME/etc/hadoop
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
+```
 
-
+```
 ################## core-site.xml ##################################
 <configuration>
 	<property>
@@ -31,8 +33,9 @@ export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 		<value>/home/bigdata/hadoop-2.x.x/tmp</value>
 	</property>
 </configuration>
+```
 
-
+```
 ################## hdfs-site.xml ##################################
 
 <configuration>
@@ -49,7 +52,9 @@ export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 		<value>true</value>
 	</property>
 </configuration>
+```
 
+```
 ################## mapred-site.xml ##################################
 <configuration>
 	<property>
@@ -57,7 +62,9 @@ export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 		<value>yarn</value>
 	</property>
 </configuration>
+```
 
+```
 ################## yarn-site.xml ##################################
 <configuration>
      <property>
@@ -73,4 +80,4 @@ export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
          <value>bigdata101</value>
      </property>
 </configuration>
-
+```

@@ -20,6 +20,7 @@ export HBASE_REGIONSERVERS=/home/bigdata/hbase/conf/regionservers
 export HBASE_MANAGES_ZK=true
 
 
+```
 ################## hbase-site.xml ##################################
 
 <configuration>
@@ -56,3 +57,4 @@ export HBASE_MANAGES_ZK=true
 		<value>false</value>
 	</property>
 </configuration>
+```

@@ -6,11 +6,12 @@ categories: TechnicalNote
 ---
 
 
+```
 ################## 환경변수 설정 #################################
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
 export HIVE_HOME=/home/bigdata/hive
 export PATH=$PATH:$HIVE_HOME/bin
-
+```
 
 ```
 ################## hive-site.xml ##################################
