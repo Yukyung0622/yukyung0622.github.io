@@ -116,8 +116,9 @@ scala> val selectDf = df.select("_id.$numberLong","movieName").toDF("_id","movie
 scala> selectDf.write.mode("overwrite").saveAsTable("mmdb_hdfs_schema.movies")
 
 // mongodb 연동 영화리뷰
-# spark-shell --conf "spark.mongodb.input.uri=mongodb://chhak:1234@192.168.50.82:27017/chhak.movies" --packages org.mongodb.spark:mongo-spark-connector_2.11:2.4.0
-# movies
+spark-shell --conf "spark.mongodb.input.uri=mongodb://chhak:1234@192.168.50.82:27017/chhak.movies" --packages org.mongodb.spark:mongo-spark-connector_2.11:2.4.0
+
+movies
 scala> import com.mongodb.spark._
 scala> val moviesRDD = MongoSpark.load(sc).map(line => line.toJson)
 scala> moviesRDD.saveAsTextFile("hdfs:///sample/moviesRDD")

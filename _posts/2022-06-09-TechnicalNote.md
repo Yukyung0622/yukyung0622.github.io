@@ -6,12 +6,12 @@ categories: TechnicalNote
 ---
 
 ########################################################################
-# [Hue 설치 전 시스템 설정 작업]
-# 아래 명령어를 순차적으로 실행 할 것
-# 복사&붙여넣기 입력
+[Hue 설치 전 시스템 설정 작업]
+아래 명령어를 순차적으로 실행 할 것
+복사&붙여넣기 입력
 ########################################################################
 
-# 저장소 주소 추가
+저장소 주소 추가
 #echo "https://vault.centos.org/6.10/os/x86_64/" > /var/cache/yum/x86_64/6/base/mirrorlist.txt
 #echo "http://vault.centos.org/6.10/extras/x86_64/" > /var/cache/yum/x86_64/6/extras/mirrorlist.txt
 #echo "http://vault.centos.org/6.10/updates/x86_64/" > /var/cache/yum/x86_64/6/updates/mirrorlist.txt
@@ -26,16 +26,16 @@ categories: TechnicalNote
 #yum install scl-utils    (드디어 성공!!!)
 
 
-# 파이썬2.7 설치
+파이썬2.7 설치
 yum install centos-release-scl
 yum install scl-utils
 yum install python27
 source /opt/rh/python27/enable
 
-# 파이썬 버전 확인
+파이썬 버전 확인
 python --version
 
-# psycopg2 패키지 설치
+psycopg2 패키지 설치
 yum --enablerepo=extras install epel-release
 yum install python-pip
 yum install postgresql-devel
