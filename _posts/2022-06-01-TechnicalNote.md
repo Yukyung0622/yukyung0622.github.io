@@ -4,6 +4,8 @@ title: "[Bigdata]Cloudera 서비스 설치"
 date: 2022-06-01 21:03:36 +0530
 categories: TechnicalNote
 ---
+
+```
 ------------------------------------------------------
 [HDFS]
 NameNode - server01
@@ -105,3 +107,4 @@ Load Balancer - 미설치
 'HBase Thrift 서버' - HBase Thrift Server(server02) 선택
 ------------------------------------------------------
 
+```
