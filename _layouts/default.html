@@ -18,7 +18,7 @@
       <div class="about-title">
       <a href="{{ "/" | relative_url}}">
         {% if site.plainwhite.portfolio_image_dark and site.plainwhite.dark_mode %}
-        <img class="light" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" />
+        <img class="light" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image}}" alt="{{ site.plainwhite.name }}" />
         <img class="dark" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image_dark }}" alt="{{ site.plainwhite.name }}" />
         {% else %}
         <img src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" />
@@ -42,13 +42,6 @@
           </li>
         </a>
         {%- endif -%}
-        {%- if site.plainwhite.social_links.instagram -%}
-        <a href="https://instagram.com/yu_abc_" target="_blank">
-          <li>
-            <i class="icon-instagram"></i>
-          </li>
-        </a>
-        {%- endif -%}
         {%- if site.plainwhite.social_links.gitlab -%}
         <a href="https://gitlab.com/{{ site.plainwhite.social_links.gitlab }}" target="_blank">
           <li>
@@ -69,7 +62,13 @@
             <i class="icon-twitter-squared"></i>
           </li>
         </a>
-     
+        {%- endif -%}
+        {%- if site.plainwhite.social_links.instagram -%}
+        <a href="https://instagram.com/yu_abc_" target="_blank">
+          <li>
+            <i class="icon-instagram"></i>
+          </li>
+        </a>
         {%- endif -%}
         {%- if site.plainwhite.social_links.facebook -%}
         <a href="https://facebook.com/{{ site.plainwhite.social_links.facebook }}" target="_blank">
